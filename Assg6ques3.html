@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment6ques3</title>
+</head>
+<style>
+    .firstName{
+        background-color: aquamarine;
+       
+        
+    }
+    .lastName{
+        background-color: aquamarine;
+    }
+    .email{
+        background-color: aquamarine;
+    }
+    .password{
+        background-color: aquamarine;
+    }
+    .confirmPassword{
+        background-color: aquamarine;
+    }
+    .age{
+        background-color: aquamarine;
+    }
+    #male{
+        background-color: aquamarine;
+    }
+    #female{
+        background-color: aquamarine;
+    }
+    #other{
+        background-color: aquamarine;  
+    }
+    #cities{
+        background-color: aquamarine;  
+    }
+    #terms{
+        background-color: aquamarine;
+    }
+    #button{
+        background-color: aquamarine;
+        border-color: black;
+    }
+    .form{
+        background-color: antiquewhite;
+        border-style: solid;}
+     .checkbox{
+        background-color: aquamarine; 
+     }   
+</style>
+
+
+    <!--Develop an HTML form with various input elements. Use CSS to style the form, including setting
+background colors for input fields. Create a custom color palette for the form elements, and demonstrate
+how to apply opacity to one of the form sections.-->
+<body>
+<div class="form"> 
+    <h1>Registration Form </h1>   
+<form>
+    <label for="firstName">First Name:
+    <input type="text" name="firstName" class="firstName" placeholder="Enter first Name " id="firstName"
+    required minlength=3
+    max=20 />
+    </label>
+    <br><br>
+    <label for="lastName">Last Name:
+    <input type="text" name="lastName" class="lastName" placeholder="Enter last name " id="lastName"
+    required min=3 max=20 />
+    </label>
+    <br><br>
+    <label for="email">Email:
+        <input type="email" name="email" class="email" placeholder="abc@9999.com" id="email"
+        required />
+        </label>
+        <br><br>
+        <label for="password">Password:
+        <input type="password" name="password" class="password" placeholder="********"
+        id="password" required min=8 />
+        </label>
+        <br><br>
+        <label for="confirmPassword">Confirm Password:
+        <input type="password" name="confirmPassword" class="confirmPassword"
+        placeholder="********" id="confirmPassword"
+        required />
+        </label>
+        <br><br>
+        <label for="age">Age:
+        <input type="number" name="age" class="age" placeholder="XX" id="age" required min=0
+        max=150 />
+        </label>
+        <br><br>
+        <label for="">Gender:
+        <input type="radio" id="male" value="male" name="gender" checked />
+        <label for="male">Male</label>
+        <input type="radio" id="female" value="female" name="gender" />
+        <label for="female">Female</label>
+        <input type="radio" id="other" value="other" name="gender" />
+        <label for="other">Other</label>
+        </label>
+        <br><br>
+
+        <label for="cities">Choose your city </label>
+        <select name="city" id="cities">
+            <option value="">--Please choose your city </option>
+            <option value="Aligarh">Aligarh</option>
+            <option value="Agra">Agra</option>
+            <option value="Allahabad">Allahabad</option>
+            <option value="Ballia">Ballia</option>
+            <option value="Chandigarh">Chandigarh</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Noida">Noida</option>
+            <option value="Kolkata">Kolkata</option>
+        </select>
+        <br><br>
+        <label for="terms">terms:
+        <input type="checkbox" id="terms" required class="checkbox" /> I agree to terms and
+        conditions
+        </label>
+        <br><br>
+        <button type="submit" id="button">Register</button>
+        </form>
+   </div> 
+</body>
+</html>

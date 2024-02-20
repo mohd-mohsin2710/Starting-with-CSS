@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6 </title>
+    <link rel="stylesheet" href="CSS/Assg6ques1.css">
+
+    <style>
+        .internal{
+            color: rgb(0, 0, 255);
+        }
+
+        .inline__internal{
+            color: blue;
+        }
+
+        .internal__ext{
+            color: darkblue;
+        }
+
+        .inline__internal__external{
+            color: blue;
+        }
+    </style>
+    
+
+
+</head>
+<body>
+
+    <!-- Create a simple page with some div tags and show different ways to add CSS as well as
+         what happens when you target the same elements with inline, internal, and external CSS. 
+         Also, utilize comments in the project where required.-->
+
+     <h2 style="color: brown;">It is styled by inline styling </h2> <!-- inline styling-->
+     <div class="internal"><h2>It is styled by internal styling</h2></div> <!--internal styling-->
+     <div class="external"><h2>It is styled by external styling</h2></div> <!-- external styling-->
+
+      <div style="color: brown;" class="inline__internal"><h2>Inline + Internal (inline get priority)</h2> </div>
+     <div class="int__external internal__ext"><h2>Internal + External (internal get the priority )</h2></div>
+     <div style="color: brown;" class="inline__internal__external"><h2>Inline + Internal +
+   External (Inline get the priority among all )</h2></div>
+    
+</body>
+</html>
